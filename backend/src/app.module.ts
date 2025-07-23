@@ -6,7 +6,7 @@ import { IdeasModule } from './ideas/ideas.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb+srv://amuawia666:mongodb@cluster0.csit0.mongodb.net/'),
+    MongooseModule.forRoot(process.env.MONGO_URI || ''),
     IdeasModule
   ],
   controllers: [AppController],
