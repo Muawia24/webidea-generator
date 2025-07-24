@@ -27,27 +27,25 @@ A simple idea-to-preview flow:
 
 ```bash
 📦 root/
-├── frontend/            # Next.js frontend app
-│   └── app/             # App router pages
-│   └── components/      # UI components
-│   └── services/        # API interaction helpers
-├── backend/             # NestJS backend app
+├── frontend/            
+│   └── app/             
+       
+├── backend/             
 │   └── src/
-│       └── ideas/       # Module handling idea & section logic
+│       └── ideas/       
 │       └── app.module.ts
-│   └── tests/                  # (Optional) Shared types/interfaces
+│   └── tests/                 
 
 ##  Setup Instructions 
 
 ### 1. Clone the Repo 
 ```bash
-git clone https://github.com/yourusername/stunning-challenge.git
+git clone https://github.com/Muawia24/webidea-generator.git
 cd stunning-challenge
 
 ### 2. Setup Backend  
 ```bash
 cd backend
-cp .env.example .env  # Add your MongoDB URI
 npm install
 npm run start:dev
 ```
