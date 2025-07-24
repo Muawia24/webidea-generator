@@ -53,7 +53,7 @@ describe('Ideas API (e2e)', () => {
       .send({})
       .expect(400);
 
-    expect(res.body.message).toBe('Idea is required');
+    expect(res.body.message).toEqual(["idea must be a string", "idea should not be empty"]);
   });
 
   it('GET /ideas/:id - should 404 for non-existent id', async () => {

@@ -1,7 +1,10 @@
 import { Controller, Post, Body, Get, Param, HttpException, HttpStatus } from '@nestjs/common';
 import { IdeasService } from './ideas.service';
+import { IsString, IsNotEmpty } from 'class-validator';
 
 class CreateIdeaDto {
+  @IsNotEmpty()
+  @IsString()
   idea: string;
 }
 
@@ -11,9 +14,7 @@ export class IdeasController {
 
   @Post()
   async create(@Body() createIdeaDto: CreateIdeaDto) {
-    if (!createIdeaDto.idea) {
-      throw new HttpException('Idea is required', HttpStatus.BAD_REQUEST);
-    }
+    
     return this.ideasService.create(createIdeaDto.idea);
   }
 
