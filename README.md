@@ -56,3 +56,9 @@ cd ../frontend
 npm install
 npm run dev
 ```
+
+## 📹 Project Walkthrough (Loom Video)
+
+Watch a 3–4 minute walkthrough explaining the architecture, logic, and how I used AI tools during development.
+
+🔗 [Watch the Loom Video](https://www.loom.com/share/6c97e9d0fa6d476a860922fb7ed5a3c9?sid=48f1bd7a-5ba4-4fc1-9baa-a785d81c80ef)
